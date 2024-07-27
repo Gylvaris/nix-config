@@ -142,6 +142,7 @@
     inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
+    goverlay
   ];
 
   fonts.packages = with pkgs; [
