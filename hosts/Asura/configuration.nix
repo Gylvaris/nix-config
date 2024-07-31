@@ -16,7 +16,19 @@
 
   services.xserver.enable = true;
   
-  services.xserver.desktopManager.gnome.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      #xdg-desktop-portal-hyprland
+      xdg-desktop-portal-gtk
+    ];
+  };
 
   services.xserver.xkb.layout = "pl";
 
@@ -46,6 +58,9 @@
     inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
+    dunst
+    wofi
+    egl-wayland
   ];
 
   environment.variables.EDITOR = "nvim";

@@ -33,9 +33,10 @@
     libreoffice-fresh
     prismlauncher
     lshw
-    easyeffects
+    #easyeffects
     gimp
     foot
+    kitty
   ];
 
   programs.git = {
