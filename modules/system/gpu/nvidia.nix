@@ -18,5 +18,5 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  servies.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia"];
 }

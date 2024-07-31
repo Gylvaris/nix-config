@@ -1,7 +1,7 @@
 { config,lib, ... }:
 {
   networking = {
-    hostname = "Asura";
+    hostName = "Asura";
     networkmanager = {
       enable = true;
       #plugins = mkForce [];
