@@ -11,7 +11,7 @@
     ./locales.nix
     ./networking.nix
     ./nix.nix
-    ./preserve-system.nix
+    #./preserve-system.nix
     ./wayland.nix
   ];
 }

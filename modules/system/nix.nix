@@ -15,7 +15,7 @@
       ];
       auto-optimise-store = true;
       keep-outputs = true;
-      keep-dervations = true;
+      #keep-dervations = true;
     };
   };
 }
