@@ -29,6 +29,7 @@
         };
         modules = [
           ./hosts/Asura/configuration.nix
+          ./modules/system
 
           home-manager.nixosModules.home-manager
           {
