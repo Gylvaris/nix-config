@@ -9,7 +9,7 @@
 
   swapDevices = [{
     device = "/swapfile";
-    size = 32 * 1024; # 10GB
+    size = 32 * 1024; # 32GB
   }];
 
   services.fstrim.enable = true;
