@@ -18,14 +18,12 @@
   
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
   };
 
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
-      #xdg-desktop-portal-hyprland
       xdg-desktop-portal-gtk
     ];
   };
