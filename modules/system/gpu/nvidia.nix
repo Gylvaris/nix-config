@@ -5,7 +5,7 @@
     dynamicBoost.enable = true;
     powerManagement.enable = true;
     powerManagement.finegrained = true;
-    open = true;
+    open = false;
     nvidiaSettings = true;
     prime = {
       offload = {
@@ -15,7 +15,7 @@
       amdgpuBusId = "PCI:5:0:0";
       nvidiaBusId = "PCI:1:0:0";
     };
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   services.xserver.videoDrivers = ["nvidia"];
