@@ -33,7 +33,7 @@
     libreoffice-fresh
     prismlauncher
     lshw
-    #easyeffects
+    easyeffects
     gimp
     foot
     kitty
@@ -41,6 +41,7 @@
     grim
     slurp
     wf-recorder
+    swww
   ];
 
   programs.git = {
