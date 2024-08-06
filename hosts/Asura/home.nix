@@ -37,6 +37,10 @@
     gimp
     foot
     kitty
+    satty
+    grim
+    slurp
+    wf-recorder
   ];
 
   programs.git = {
