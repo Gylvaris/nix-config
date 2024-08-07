@@ -13,5 +13,6 @@
     ./nix.nix
     #./preserve-system.nix
     ./wayland.nix
+    ./opentabletdriver.nix
   ];
 }
