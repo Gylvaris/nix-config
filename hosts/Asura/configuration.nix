@@ -16,13 +16,11 @@
 
   services.xserver.enable = true;
   
-  #programs.hyprland = {
-    #enable = true;
-    #package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-  #};
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+  };
 
-  services.desktopManager.plasma6.enable = true;
- 
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -56,12 +54,14 @@
     curl
     vim
     ffmpeg_6-full
-    inputs.nixvim.packages.${pkgs.system}.default
+    #inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
     dunst
     wofi
     egl-wayland
+    libnotify
+    dunst
   ];
 
   environment.variables.EDITOR = "nvim";
