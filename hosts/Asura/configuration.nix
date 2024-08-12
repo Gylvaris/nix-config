@@ -54,7 +54,7 @@
     curl
     vim
     ffmpeg_6-full
-    #inputs.nixvim.packages.${pkgs.system}.default
+    inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
     dunst
