@@ -62,6 +62,7 @@
     egl-wayland
     libnotify
     dunst
+    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
   ];
 
   environment.variables.EDITOR = "nvim";

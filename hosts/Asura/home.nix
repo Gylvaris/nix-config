@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   home.username = "gylvaris";
@@ -31,7 +31,7 @@
     obs-studio
     heroic
     libreoffice-fresh
-    prismlauncher
+    #inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     lshw
     easyeffects
     gimp

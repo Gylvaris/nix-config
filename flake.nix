@@ -22,9 +22,14 @@
     hyprland = {
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     };
+
+    prismlauncher = {
+      url = "github:PrismLauncher/PrismLauncher";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, aagl, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, aagl, prismlauncher, ... }: {
     nixosConfigurations = {
         Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -41,7 +46,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.users.gylvaris = import ./hosts/Asura/home.nix;
-          }
+            }
         ];
       };
     };
