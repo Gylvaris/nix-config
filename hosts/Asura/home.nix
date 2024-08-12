@@ -42,6 +42,8 @@
     slurp
     wf-recorder
     swww
+    protonplus
+    osu-lazer-bin
   ];
 
   programs.git = {
