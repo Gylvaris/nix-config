@@ -44,6 +44,7 @@
     swww
     protonplus
     osu-lazer-bin
+    krita
   ];
 
   programs.git = {
