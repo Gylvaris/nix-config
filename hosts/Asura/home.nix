@@ -45,6 +45,7 @@
     protonplus
     osu-lazer-bin
     krita
+    discord-ptb
   ];
 
   programs.git = {
