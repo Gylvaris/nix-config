@@ -1,4 +1,4 @@
-{inputs, config, pkgs, ... }:
+{inputs, pkgs, ... }:
 
 {
   imports =
@@ -30,13 +30,6 @@
 
   services.xserver.xkb.layout = "pl";
 
-  # services.printing.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.libinput.enable = true;
-
-  #services.flatpak.enable = true;
-
   users.users.gylvaris = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"]; 
@@ -63,6 +56,7 @@
     libnotify
     dunst
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+    wl-clipboard
   ];
 
   environment.variables.EDITOR = "nvim";

@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "gylvaris";
@@ -31,9 +31,8 @@
     obs-studio
     heroic
     libreoffice-fresh
-    #inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     lshw
-    easyeffects
+    #easyeffects
     gimp
     foot
     kitty
