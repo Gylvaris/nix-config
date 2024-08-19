@@ -4,7 +4,7 @@
     package = pkgs.nixVersions.latest;
     gc = {
       automatic = true;
-      dates = "daily";
+      dates = "weekly";
       options = "--delete-older-than 7d";
     };
 
@@ -15,7 +15,6 @@
       ];
       auto-optimise-store = true;
       keep-outputs = true;
-      #keep-dervations = true;
     };
   };
 }
