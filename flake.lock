@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722680456,
-        "narHash": "sha256-q3ZxjLD/6WnAGwihLlRLoEzIEaVE1AqnH5h1TePYP/I=",
+        "lastModified": 1723815556,
+        "narHash": "sha256-TgkChEFJHqrciuI1Va7buSs5RQHCSxbWRFmuOI+e2tY=",
         "owner": "ezKEa",
         "repo": "aagl-gtk-on-nix",
-        "rev": "54264a57d0c58afd12888eb1c576f96ca811530c",
+        "rev": "4d7fa422b50b612aa29bfb8487472f1cd9bad85b",
         "type": "github"
       },
       "original": {
@@ -41,11 +41,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1723405438,
-        "narHash": "sha256-bpmC2m7OhlDvqgQZdZ2jBLyeIkq/Jld3X4bqRAxBSp8=",
+        "lastModified": 1724006173,
+        "narHash": "sha256-1ROh0buuxiMyc6eIb3CIbJsmYO7PhLqSYs55mOx1XTk=",
         "owner": "hyprwm",
         "repo": "aquamarine",
-        "rev": "9312aa28271c91e5d67ecb9def527b2bbcff0e66",
+        "rev": "7f8df01d4297b9068a9592400f16044602844f86",
         "type": "github"
       },
       "original": {
@@ -289,11 +289,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1723399884,
-        "narHash": "sha256-97wn0ihhGqfMb8WcUgzzkM/TuAxce2Gd20A8oiruju4=",
+        "lastModified": 1723986931,
+        "narHash": "sha256-Fy+KEvDQ+Hc8lJAV3t6leXhZJ2ncU5/esxkgt3b8DEY=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "086f619dd991a4d355c07837448244029fc2d9ab",
+        "rev": "2598861031b78aadb4da7269df7ca9ddfc3e1671",
         "type": "github"
       },
       "original": {
@@ -366,11 +366,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1723799341,
-        "narHash": "sha256-OOwAjqHy/lC+rHZrWDIF2w0oppVxCP48lPDhyNNZ5HQ=",
+        "lastModified": 1724016119,
+        "narHash": "sha256-ricYM9Ethzai2l2qCK6Bkgfg53FtzWuzaVIDzZ7Ve1Y=",
         "ref": "refs/heads/main",
-        "rev": "1840a907a8c6b1f59cfa6738a8f46b320e8df8b1",
-        "revCount": 5097,
+        "rev": "83d88fa56467a2b749fb2320e1595281107bd326",
+        "revCount": 5111,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -672,11 +672,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1723452026,
-        "narHash": "sha256-kloIjI6/BCR7e9itwuWyYyd9O1ihWG70kBWkd+JmImE=",
+        "lastModified": 1723996829,
+        "narHash": "sha256-5c9yQt/TXOhf4ONj1tvrWpWpBz66WYxMHuxwnfuvxGw=",
         "owner": "PrismLauncher",
         "repo": "PrismLauncher",
-        "rev": "d6a825dd4704172c6115919ff8550d3074b950f9",
+        "rev": "efac06379756dff61b6fd05602bf58686f42a1a0",
         "type": "github"
       },
       "original": {
