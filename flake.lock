@@ -366,11 +366,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1724016119,
-        "narHash": "sha256-ricYM9Ethzai2l2qCK6Bkgfg53FtzWuzaVIDzZ7Ve1Y=",
+        "lastModified": 1724085862,
+        "narHash": "sha256-qIPLv+MmTVZ0sjhx99EZhe/2aGzy5JOskmlqPd6DNFQ=",
         "ref": "refs/heads/main",
-        "rev": "83d88fa56467a2b749fb2320e1595281107bd326",
-        "revCount": 5111,
+        "rev": "c86db7bbb0cf14d4955ee3a4d13c0ed9f8a0e0ae",
+        "revCount": 5115,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -543,15 +543,31 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1723637854,
-        "narHash": "sha256-med8+5DSWa2UnOqtdICndjDAEjxr5D7zaIiK4pn0Q7c=",
+        "lastModified": 1723991338,
+        "narHash": "sha256-Grh5PF0+gootJfOJFenTTxDTYPidA3V28dqJ/WV7iis=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c3aa7b8938b17aebd2deecf7be0636000d62a2b9",
+        "rev": "8a3354191c0d7144db9756a74755672387b702ba",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1723175592,
+        "narHash": "sha256-M0xJ3FbDUc4fRZ84dPGx5VvgFsOzds77KiBMW/mMTnI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5e0ca22929f3342b19569b21b2f3462f053e497b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
@@ -666,17 +682,15 @@
         "flake-compat": "flake-compat_3",
         "flake-parts": "flake-parts_3",
         "libnbtplusplus": "libnbtplusplus",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_3",
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1723996829,
-        "narHash": "sha256-5c9yQt/TXOhf4ONj1tvrWpWpBz66WYxMHuxwnfuvxGw=",
+        "lastModified": 1724133861,
+        "narHash": "sha256-5is8VV87BaiwJfIlBf4G6bfTM7rk4+C+BANomo2z420=",
         "owner": "PrismLauncher",
         "repo": "PrismLauncher",
-        "rev": "efac06379756dff61b6fd05602bf58686f42a1a0",
+        "rev": "7f594a342e056ad2f9b0f0e4dff26e8cfcf324dd",
         "type": "github"
       },
       "original": {

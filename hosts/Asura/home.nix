@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.username = "gylvaris";
@@ -32,7 +32,7 @@
     heroic
     libreoffice-fresh
     lshw
-    #easyeffects
+    easyeffects
     gimp
     foot
     kitty

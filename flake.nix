@@ -25,7 +25,6 @@
 
     prismlauncher = {
       url = "github:PrismLauncher/PrismLauncher";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
