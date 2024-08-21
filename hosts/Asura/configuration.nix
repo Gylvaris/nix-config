@@ -32,7 +32,7 @@
 
   users.users.gylvaris = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"]; 
+    extraGroups = ["networkmanager" "wheel" "gamemode"]; 
     packages = with pkgs; [
       firefox
       chromium
