@@ -57,6 +57,7 @@
     dunst
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     wl-clipboard
+    inputs.zen-browser.packages."${system}".default
   ];
 
   environment.variables.EDITOR = "nvim";
