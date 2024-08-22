@@ -43,8 +43,12 @@
 
           home-manager.nixosModules.home-manager
           {
+            home.manager.extraSpecialArgs = {
+              inherit inputs;
+            };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            backupFileExtension = "backup";
 
             home-manager.users.gylvaris = import ./hosts/Asura/home.nix;
             }

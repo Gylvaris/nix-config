@@ -46,7 +46,7 @@
     wget
     curl
     vim
-    ffmpeg_6-full
+    ffmpeg_7-full
     inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
