@@ -17,4 +17,5 @@
       };
     };
   };
+  security.rtkit.enable = true;
 }
