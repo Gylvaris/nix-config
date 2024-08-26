@@ -1,6 +1,10 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
+  imports = [
+    ../../pkgs/zen.nix
+  ];
+
   home.username = "gylvaris";
   home.homeDirectory = "/home/gylvaris";
 
@@ -57,6 +61,8 @@
     enable = true;
     enableCompletion = true;
   };
+  
+  programs.zenBrowser.enable = true;
 
   home.stateVersion = "24.05";
 
