@@ -16,7 +16,7 @@
         hash = "sha256-cB2aJ9awl+gTyBOe0T7wMiZWw7RcwohOuCCdWBJXXwo=";
       };
 
-      extraPkgs = pkgs: [ "ffmpeg" ];
+      extraPkgs = pkgs: [ pkgs.ffmpeg ];
 
       profile = ''
         export GST_PLUGIN_SYSTEM_PATH_1_0=/usr/lib/gstreamer-1.0
