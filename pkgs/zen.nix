@@ -9,11 +9,11 @@
   config = lib.mkIf config.programs.zenBrowser.enable (let
     zenBrowser = pkgs.appimageTools.wrapType2 rec {
       pname = "zen-browser";
-      version = "1.0.0-a.29";
+      version = "1.0.0-a.30";
 
       src = pkgs.fetchurl {
         url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen-specific.AppImage";
-        hash = "sha256-cB2aJ9awl+gTyBOe0T7wMiZWw7RcwohOuCCdWBJXXwo=";
+        hash = "sha256-l3Kjdqg70A2sHt8oGAbonDhgNrX8CICWtVFAM30f1bo=";
       };
 
       extraPkgs = pkgs: [ pkgs.ffmpeg ];
