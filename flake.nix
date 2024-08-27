@@ -26,8 +26,6 @@
     prismlauncher = {
       url = "github:PrismLauncher/PrismLauncher";
     };
-
-    #zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, aagl, prismlauncher, ... }: {

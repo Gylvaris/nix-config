@@ -323,11 +323,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1724688164,
-        "narHash": "sha256-59TSHh7qDewt/B7XeJzhC+jf12wd+YKSMI8ESs/AoHY=",
+        "lastModified": 1724784150,
+        "narHash": "sha256-XlmFLoLppuKxSh2eGPXy27+tNIQ+w+cXoh8Ln3vBJew=",
         "ref": "refs/heads/main",
-        "rev": "1ea47950f4262ec1215087948c7275f8e0115af2",
-        "revCount": 5142,
+        "rev": "17ed4fc04cedbaad365bdebf6bfe0160c527f3fe",
+        "revCount": 5147,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -627,11 +627,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1724587287,
-        "narHash": "sha256-dj0ARXBBkmjbQFtHZn92de/Eq8XFv3WwBMVYCpwr2aI=",
+        "lastModified": 1724705703,
+        "narHash": "sha256-ygn3RpqwxJYyNVHHclQiJdFe98SfwJY5/Ospz/NzQUc=",
         "owner": "PrismLauncher",
         "repo": "PrismLauncher",
-        "rev": "23c69e7f94425f53333046c6aeda5d09de7af3de",
+        "rev": "685519d12f69f11461afae26817c8ea0fb3ae98b",
         "type": "github"
       },
       "original": {
