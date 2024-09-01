@@ -47,7 +47,6 @@
     curl
     vim
     ffmpeg_7-full
-    inputs.nixvim.packages.${pkgs.system}.default
     gamemode
     mangohud
     dunst
@@ -57,7 +56,7 @@
     dunst
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     wl-clipboard
-    #inputs.zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${system}".default
   ];
 
   environment.variables.EDITOR = "nvim";

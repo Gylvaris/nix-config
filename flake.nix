@@ -14,21 +14,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:Rexcrazy804/nixvim-config";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    prismlauncher.url = "github:PrismLauncher/PrismLauncher";
+
+    zen-browser = {
+      url = "github:ch4og/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hyprland = {
-      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    };
-
-    prismlauncher = {
-      url = "github:PrismLauncher/PrismLauncher";
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, aagl, prismlauncher, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, aagl, ... }: {
     nixosConfigurations = {
         Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
