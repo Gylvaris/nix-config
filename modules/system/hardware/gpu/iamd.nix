@@ -11,7 +11,7 @@
       rocm-opencl-runtime
       libva
       vaapiVdpau
-      libvdpau-va-gl
+      libvdpau-va-gl   
     ];
 
     extraPackages32 = with pkgs; [

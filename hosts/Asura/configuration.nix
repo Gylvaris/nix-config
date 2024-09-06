@@ -9,16 +9,21 @@
 
   swapDevices = [{
     device = "/swapfile";
-    size = 32 * 1024; # 32GB
+    size = 16 * 1024; # 16GB
   }];
 
   services.fstrim.enable = true;
 
   services.xserver.enable = true;
+
+  nix.settings = {
+    max-jobs = 3;
+    cores = 5;
+  };
   
   programs.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
   xdg.portal = {
@@ -57,6 +62,8 @@
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     wl-clipboard
     inputs.zen-browser.packages."${system}".default
+    libva-utils
+    inputs.nixvim.packages.${pkgs.system}.default
   ];
 
   environment.variables.EDITOR = "nvim";

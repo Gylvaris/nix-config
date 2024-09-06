@@ -22,6 +22,11 @@
       url = "github:ch4og/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:Rexcrazy804/nixvim-config";
+      #inputs.nixpkgs.follows = "nixpkgs"; wait for fix
+    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, aagl, ... }: {
