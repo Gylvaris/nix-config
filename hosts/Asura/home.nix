@@ -40,6 +40,7 @@
     osu-lazer-bin
     krita
     discord-ptb
+    spotify
   ];
 
   programs.git = {
