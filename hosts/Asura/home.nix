@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [];
@@ -17,7 +17,6 @@
     yq-go
     eza
     fzf 
-    cowsay
     file
     which
     tree
@@ -32,17 +31,11 @@
     obsidian
     obs-studio
     heroic
-    libreoffice-fresh
     lshw
     easyeffects
     gimp
     foot
     kitty
-    satty
-    grim
-    slurp
-    wf-recorder
-    swww
     protonplus
     osu-lazer-bin
     krita

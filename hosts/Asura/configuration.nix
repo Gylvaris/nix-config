@@ -14,32 +14,20 @@
 
   services.fstrim.enable = true;
 
-  services.xserver.enable = true;
-
   nix.settings = {
-    max-jobs = 3;
-    cores = 5;
-  };
-  
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    max-jobs = 4;
+    cores = 6;
   };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-    ];
-  };
-
+  services.xserver.enable = true;
   services.xserver.xkb.layout = "pl";
+
+  services.desktopManager.plasma6.enable = true;
 
   users.users.gylvaris = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel" "gamemode"]; 
     packages = with pkgs; [
-      firefox
       chromium
     ];
   };
@@ -54,13 +42,8 @@
     ffmpeg_7-full
     gamemode
     mangohud
-    dunst
-    wofi
     egl-wayland
-    libnotify
-    dunst
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
-    wl-clipboard
     inputs.zen-browser.packages."${system}".default
     libva-utils
     inputs.nixvim.packages.${pkgs.system}.default
