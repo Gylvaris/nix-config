@@ -23,11 +23,10 @@
 
     nixvim = {
       url = "github:Rexcrazy804/nixvim-config";
-      #inputs.nixpkgs.follows = "nixpkgs"; wait for fix
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, aagl, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, aagl, ... }: {
     nixosConfigurations = {
         Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
