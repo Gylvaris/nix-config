@@ -26,7 +26,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, aagl, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
         Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
