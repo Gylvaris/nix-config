@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # AMD igpu configuration for my laptop 
   hardware.graphics = {
     enable = true;
     enable32Bit = true;

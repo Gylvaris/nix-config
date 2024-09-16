@@ -13,12 +13,6 @@
   }];
 
   services.fstrim.enable = true;
-
-  nix.settings = {
-    max-jobs = 4;
-    cores = 6;
-  };
-
   services.xserver.enable = true;
   services.xserver.xkb.layout = "pl";
 
@@ -27,12 +21,7 @@
   users.users.gylvaris = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel" "gamemode"]; 
-    packages = with pkgs; [
-      chromium
-    ];
   };
-
-  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     cmake
@@ -43,7 +32,7 @@
     gamemode
     mangohud
     egl-wayland
-    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+    inputs.prismlauncher.packages.${pkgs.system}.default
     inputs.zen-browser.packages."${system}".default
     libva-utils
     inputs.nixvim.packages.${pkgs.system}.default

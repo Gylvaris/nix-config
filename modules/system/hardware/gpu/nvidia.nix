@@ -1,5 +1,6 @@
 { config, ... }:
 {
+  # Nvidia dgpu configuration for my laptop
   hardware.nvidia = {
     modesetting.enable = true;
     dynamicBoost.enable = true;

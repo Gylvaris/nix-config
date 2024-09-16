@@ -1,5 +1,6 @@
 { pkgs, ...}:
 {
+  # Cool script 
   system.activationScripts.diff = 
     /*
     bash
