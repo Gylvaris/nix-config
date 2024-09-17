@@ -28,10 +28,10 @@
     };
 
     # Neovim config
-    nixvim.url = "github:Rexcrazy804/nixvim-config";
+    nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
+  outputs = { self, nixpkgs, home-manager, nvf, ... } @ inputs: {
     nixosConfigurations = {
         Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

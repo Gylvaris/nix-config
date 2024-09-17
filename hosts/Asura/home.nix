@@ -1,7 +1,9 @@
-{ pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 {
-  imports = [];
+  imports = [
+    inputs.nvf.homeManagerModules.nvf
+  ];
 
   home.username = "gylvaris";
   home.homeDirectory = "/home/gylvaris";
@@ -52,6 +54,10 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
+  };
+
+  programs.nvf = {
+    enable = true;
   };
 
   home.stateVersion = "24.05";

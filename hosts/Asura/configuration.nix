@@ -33,9 +33,8 @@
     mangohud
     egl-wayland
     inputs.prismlauncher.packages.${pkgs.system}.default
-    inputs.zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${pkgs.system}".default
     libva-utils
-    inputs.nixvim.packages.${pkgs.system}.default
   ];
 
   environment.variables.EDITOR = "nvim";
