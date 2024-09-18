@@ -12,6 +12,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    #Hyprland
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
     # Launchers for various anime games like Zenless Zone Zero 
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";

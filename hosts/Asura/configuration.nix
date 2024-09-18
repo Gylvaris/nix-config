@@ -16,6 +16,12 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "pl";
 
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+  };
+
   services.desktopManager.plasma6.enable = true;
 
   users.users.gylvaris = {
@@ -35,6 +41,10 @@
     inputs.prismlauncher.packages.${pkgs.system}.default
     inputs.zen-browser.packages."${pkgs.system}".default
     libva-utils
+    dunst
+    wofi
+    libnotify
+    wl-clipboard
   ];
 
   environment.variables.EDITOR = "nvim";

@@ -43,6 +43,11 @@
     krita
     discord-ptb
     spotify
+    satty
+    grim
+    slurp
+    swww
+    wf-recorder
   ];
 
   programs.git = {
@@ -58,6 +63,16 @@
 
   programs.nvf = {
     enable = true;
+    settings.vim = {
+      autocomplete = {
+        enable = true;
+        alwaysComplete = false;
+      };
+
+      git = {
+        enable = true;
+      };
+    };
   };
 
   home.stateVersion = "24.05";

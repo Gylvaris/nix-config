@@ -9,7 +9,7 @@
         "flakes"
         "nix-command"
       ];
-      max-jobs = 4;
+      max-jobs = 6;
       cores = 6;
       auto-optimise-store = true;
     }; 
