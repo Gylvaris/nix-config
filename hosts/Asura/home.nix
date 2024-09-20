@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [
@@ -64,19 +64,49 @@
   programs.nvf = {
     enable = true;
     settings.vim = {
+      tabWidth = 4;
+
       autocomplete = {
         enable = true;
-        alwaysComplete = false;
+        alwaysComplete = true;
+      };
+
+      filetree.neo-tree = {
+        enable = true;
+      };
+
+      lsp = {
+        enable = true;
       };
 
       git = {
         enable = true;
+        gitsigns.enable = true;
       };
 
       theme = {
         enable = true;
         name = "catppuccin";
         style = "mocha";
+      };
+
+      languages = {
+        enableDAP = true;
+        enableExtraDiagnostics = true;
+        enableFormat = true;
+        enableLSP = true;
+        enableTreesitter = true;
+        
+        bash.enable = true;
+        nix.enable = true;
+      };
+
+      telescope = {
+        enable = true;
+      };
+
+      presence.neocord = {
+        enable = true;
       };
     };
   };
