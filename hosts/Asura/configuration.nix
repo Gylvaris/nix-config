@@ -29,6 +29,9 @@
     extraGroups = ["networkmanager" "wheel" "gamemode"]; 
   };
 
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
   environment.systemPackages = with pkgs; [
     cmake
     wget
@@ -45,6 +48,7 @@
     wofi
     libnotify
     wl-clipboard
+    starship
   ];
 
   environment.variables.EDITOR = "nvim";

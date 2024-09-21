@@ -55,10 +55,31 @@
     userName = "Gylvaris";
     userEmail = "111581734+Gylvaris@users.noreply.github.com";
   };
-
-  programs.bash = {
+  
+  programs.starship = {
     enable = true;
+    enableZshIntegration = true;
+    settings = {
+      line_break.disabled = true;
+      directory = {
+        truncation_length = 3;
+        truncate_to_repo = false;
+        truncation_symbol = "…/";
+      };
+      directory.read_only = " 󰌾";
+      git_branch.symbol = " ";
+      haskell.symbol = " ";
+      hostname.ssh_symbol = " ";
+      meson.symbol = "󰔷 ";
+      nix_shell.symbol = " ";
+      package.symbol = "󰏗 ";
+    };
+  };
+  programs.zsh = {
+    enable = true;
+    autosuggestion.enable = true;
     enableCompletion = true;
+    dotDir = ".config/zsh";
   };
 
   programs.nvf = {
