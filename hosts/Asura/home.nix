@@ -61,6 +61,7 @@
     enableZshIntegration = true;
     settings = {
       line_break.disabled = true;
+      right_format = "$cmd_duration";
       directory = {
         truncation_length = 3;
         truncate_to_repo = false;
@@ -68,9 +69,7 @@
       };
       directory.read_only = " 󰌾";
       git_branch.symbol = " ";
-      haskell.symbol = " ";
       hostname.ssh_symbol = " ";
-      meson.symbol = "󰔷 ";
       nix_shell.symbol = " ";
       package.symbol = "󰏗 ";
     };
@@ -80,6 +79,7 @@
     autosuggestion.enable = true;
     enableCompletion = true;
     dotDir = ".config/zsh";
+    syntaxHighlighting.enable = true;
   };
 
   programs.nvf = {
