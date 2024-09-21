@@ -5,6 +5,7 @@
     (nerdfonts.override { fonts = [
       "JetBrainsMono"
       "Mononoki"
+      "SpaceMono"
     ]; })
     noto-fonts
     noto-fonts-cjk-sans

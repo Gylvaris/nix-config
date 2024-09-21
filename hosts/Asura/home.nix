@@ -85,7 +85,7 @@
   programs.nvf = {
     enable = true;
     settings.vim = {
-      tabWidth = 3;
+      tabWidth = 4;
 
       syntaxHighlighting = true;
 
@@ -129,6 +129,15 @@
         theme = "catppuccin";
       };
 
+      maps = {
+        normal = {
+          "<leader>v" = {
+            action = "<CMD>Neotree toggle<CR>";
+            silent = true;
+          };
+        };
+      };
+
       languages = {
         enableDAP = true;
         enableExtraDiagnostics = true;
@@ -161,25 +170,33 @@
     enable = true;
     settings = {
       main = {
-        font = "JetBrains Mono Nerd Font:size=8";
-        line-height = 10;
-        letter-spacing = 0;
+        shell = "zsh";
+        term = "foot";
+        title = "foot";
+        font = "SpaceMono Nerd Font:size=11";
+        line-height = 13;
+        letter-spacing = 0.2;
         horizontal-letter-offset = 0;
         vertical-letter-offset = 0;
         box-drawings-uses-font-glyphs = "no";
-        dpi-aware = "yes";
+        dpi-aware = "no";
         #initial-window-size-chars = "";
         initial-window-mode = "windowed";
-        pad = "0x0";
+        pad = "25x25";
         resize-delay-ms = 100;
         bold-text-in-bright = "no";
         word-delimiters = ",│`|:\"'()[]{}<>";
         selection-target = "primary";
       };
 
+      scrollback = {
+        lines = 10000;
+      };
+
       cursor = {
-        style = "block";
+        style = "beam";
         blink = "no";
+        beam-thickness = 1.2;
       };
 
       mouse = {
@@ -189,6 +206,20 @@
 
       colors = {
         alpha = 0.8;
+      };
+
+      key-bindings = {
+        scrollback-up-page = "Page_Up";
+        scrollback-down-page = "Page_Down";
+        clipboard-copy = "Control+c";
+        clipboard-paste = "Control+v";
+        search-start = "Control+f";
+      };
+
+      search-bindings = {
+        cancel = "Escape";
+        find-prev = "Shift+F3";
+        find-next = "F3 Control+G";
       };
     };   
   };
