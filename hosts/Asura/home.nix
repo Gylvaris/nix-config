@@ -87,6 +87,8 @@
     settings.vim = {
       tabWidth = 3;
 
+      syntaxHighlighting = true;
+
       autocomplete = {
         enable = true;
         alwaysComplete = true;
@@ -98,6 +100,7 @@
 
       lsp = {
         enable = true;
+        lspSignature.enable = true;
       };
 
       git = {
@@ -111,6 +114,21 @@
         style = "mocha";
       };
 
+      visuals = {
+        enable = true;
+        fidget-nvim.enable = true;
+        smoothScroll.enable = true;
+      };
+
+      utility = {
+        preview.markdownPreview.enable = true;
+      };
+
+      statusline.lualine = {
+        enable = true;
+        theme = "catppuccin";
+      };
+
       languages = {
         enableDAP = true;
         enableExtraDiagnostics = true;
@@ -120,6 +138,8 @@
         
         bash.enable = true;
         nix.enable = true;
+        markdown.enable = true;
+        ts.enable = true;
       };
 
       telescope = {
@@ -128,6 +148,11 @@
 
       presence.neocord = {
         enable = true;
+        setupOpts = {
+          enable_line_number = true;
+          line_number_text = "Working on line %s of %s";
+          logo_tooltip = "Why i'm doing this?";
+        };
       };
     };
   };
