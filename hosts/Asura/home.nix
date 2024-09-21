@@ -2,7 +2,7 @@
 
 {
   imports = [
-    inputs.nvf.homeManagerModules.nvf
+    inputs.nvf.homeManagerModules.default
   ];
 
   home.username = "gylvaris";
@@ -85,7 +85,7 @@
   programs.nvf = {
     enable = true;
     settings.vim = {
-      tabWidth = 4;
+      tabWidth = 3;
 
       autocomplete = {
         enable = true;
@@ -130,6 +130,42 @@
         enable = true;
       };
     };
+  };
+
+  programs.foot = {
+    enable = true;
+    settings = {
+      main = {
+        font = "JetBrains Mono Nerd Font:size=8";
+        line-height = 10;
+        letter-spacing = 0;
+        horizontal-letter-offset = 0;
+        vertical-letter-offset = 0;
+        box-drawings-uses-font-glyphs = "no";
+        dpi-aware = "yes";
+        #initial-window-size-chars = "";
+        initial-window-mode = "windowed";
+        pad = "0x0";
+        resize-delay-ms = 100;
+        bold-text-in-bright = "no";
+        word-delimiters = ",│`|:\"'()[]{}<>";
+        selection-target = "primary";
+      };
+
+      cursor = {
+        style = "block";
+        blink = "no";
+      };
+
+      mouse = {
+        hide-when-typing = "yes";
+        alternate-scroll-mode = "yes";
+      };
+
+      colors = {
+        alpha = 0.8;
+      };
+    };   
   };
 
   home.stateVersion = "24.05";
