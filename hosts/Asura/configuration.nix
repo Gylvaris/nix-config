@@ -41,7 +41,7 @@
     gamemode
     mangohud
     egl-wayland
-    inputs.prismlauncher.packages.${pkgs.system}.default
+    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
     inputs.zen-browser.packages."${pkgs.system}".default
     libva-utils
     dunst
