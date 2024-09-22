@@ -1,5 +1,6 @@
 {
   inputs,
+  lib,
   pkgs,
   ...
 }: {
@@ -62,16 +63,105 @@
     enable = true;
     enableZshIntegration = true;
     settings = {
-      line_break.disabled = true;
-      right_format = "$cmd_duration";
-      directory = {
-        truncation_length = 3;
-        truncate_to_repo = false;
-        truncation_symbol = "…/";
+      add_newline = false;
+      format = lib.concatStrings [
+        """
+$cmd_duration$directory $git_branch
+$character
+"""
+      ];
+
+      character = {
+        success_symbol = "[• ](bold fg:green) ";
+        error_symbol = "[• 󰅙](bold fg:red) ";
       };
-      directory.read_only = " 󰌾";
-      git_branch.symbol = " ";
-      hostname.ssh_symbol = " ";
+
+      package.disabled = true;
+
+      git_branch = {
+        style = "bg: green";
+        symbol = "󰘬";
+        truncation_length = 6;
+        truncation_symbol = "";
+        format = "• [](bold fg:green)[$symbol $branch(:$remote_branch)](fg:black bg:green)[ ](bold fg:green)";
+      };
+
+      git_commit = {
+        commit_hash_length = 4;
+        tag_symbol = " ";
+      };
+
+      git_state = {
+        format = "[\($state( $progress_current of $progress_total)\)]($style) ";
+        cherry_pick = "[🍒 PICKING](bold red)";
+      };
+
+      git_status = {
+        conflicted = " 🏳 ";
+        ahead = " 🏎💨 ";
+        behind = " 😰 ";
+        diverged = " 😵 ";
+        untracked = " 🤷 ‍";
+        stashed = " 📦 ";
+        modified = " 📝 ";
+        staged = "[++\($count\)](green)";
+        renamed = " ✍️ ";
+        deleted = " 🗑 ";
+      };
+
+      hostname = {
+        ssh_only = false;
+        format = "[•$hostname](bg:cyan bold fg:black)[](bold fg:cyan )";
+        trim_at = ".companyname.com";
+        disabled = false;
+      };
+
+      line_break.disabled = false;
+
+      memory_usage = {
+        disabled = true;
+        threshold = -1;
+        symbol = " ";
+        style = "bold dimmed green";
+      };
+
+      time = {
+        disabled = true;
+        format = "🕙[\[ $time \]]($style) ";
+        time_format = "%T";
+      };
+
+      username = {
+        style_user = "bold bg:cyan fg:black";
+        style_root = "red bold";
+        format = "[](bold fg:cyan)[$user]($style)";
+        disabled = false;
+        show_always = true;
+      };
+
+      directory = {
+        home_symbol = "  ";
+        read_only = "  ";
+        style = "bg:green fg:black";
+        truncation_length = 6;
+        truncation_symbol = "••/";
+        format = "[](bold fg:green)[$path ]($style)[](bold fg:green)";
+      };
+
+      directory.substitutions = {
+        "Desktop" = "  ";
+        "Documents" = "  ";
+        "Downloads" = "  ";
+        "Music" = " 󰎈 ";
+        "Pictures" = "  ";
+        "Videos" = "  ";
+      };
+
+      cmd_duration = {
+        min_time = 0;
+        format = "[](bold fg:yellow)[ $duration](bold bg:yellow fg:black)[](bold fg:yellow) •• ";
+      };
+
       nix_shell.symbol = " ";
       package.symbol = "󰏗 ";
     };
@@ -103,7 +193,7 @@
       lsp = {
         enable = true;
         lspSignature.enable = true;
-        formatOnSave = true;
+        formatOnSave = false;
       };
 
       git = {
@@ -176,22 +266,15 @@
     settings = {
       main = {
         shell = "zsh";
-        term = "foot";
+        term = "xterm-256color";
         title = "foot";
         font = "SpaceMono Nerd Font:size=11";
         line-height = 13;
-        letter-spacing = 0.2;
-        horizontal-letter-offset = 0;
-        vertical-letter-offset = 0;
-        box-drawings-uses-font-glyphs = "no";
+        letter-spacing = 0;
         dpi-aware = "no";
-        #initial-window-size-chars = "";
-        initial-window-mode = "windowed";
-        pad = "20x20";
+        pad = "25x25";
         resize-delay-ms = 100;
         bold-text-in-bright = "no";
-        word-delimiters = ",│`|:\"'()[]{}<>";
-        selection-target = "primary";
       };
 
       scrollback = {
@@ -201,16 +284,7 @@
       cursor = {
         style = "beam";
         blink = "no";
-        beam-thickness = 1.2;
-      };
-
-      mouse = {
-        hide-when-typing = "yes";
-        alternate-scroll-mode = "yes";
-      };
-
-      colors = {
-        alpha = 0.95;
+        beam-thickness = 1.3;
       };
 
       key-bindings = {
