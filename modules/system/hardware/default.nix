@@ -1,6 +1,6 @@
 {
   imports = [
-    ./cpu/amd.nix 
+    ./cpu/amd.nix
     ./gpu
     ./opentabletdriver.nix
     ./bluetooth.nix

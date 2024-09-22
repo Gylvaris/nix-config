@@ -1,12 +1,13 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   fonts.packages = with pkgs; [
     material-design-icons
-    (nerdfonts.override { fonts = [
-      "JetBrainsMono"
-      "Mononoki"
-      "SpaceMono"
-    ]; })
+    (nerdfonts.override {
+      fonts = [
+        "JetBrainsMono"
+        "Mononoki"
+        "SpaceMono"
+      ];
+    })
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif

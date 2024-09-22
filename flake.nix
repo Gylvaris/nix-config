@@ -15,13 +15,13 @@
     #Hyprland
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
-    # Launchers for various anime games like Zenless Zone Zero 
+    # Launchers for various anime games like Zenless Zone Zero
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Minecraft launcher 
+    # Minecraft launcher
     prismlauncher.url = "github:PrismLauncher/PrismLauncher";
 
     # Cool browser based on firefox
@@ -34,9 +34,14 @@
     nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: {
     nixosConfigurations = {
-        Asura = nixpkgs.lib.nixosSystem {
+      Asura = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;

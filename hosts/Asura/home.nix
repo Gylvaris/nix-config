@@ -1,6 +1,8 @@
-{ inputs, pkgs, ... }:
-
 {
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nvf.homeManagerModules.default
   ];
@@ -14,11 +16,11 @@
     zip
     unzip
     p7zip
-    ripgrep 
-    jq 
+    ripgrep
+    jq
     yq-go
     eza
-    fzf 
+    fzf
     file
     which
     tree
@@ -55,7 +57,7 @@
     userName = "Gylvaris";
     userEmail = "111581734+Gylvaris@users.noreply.github.com";
   };
-  
+
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
@@ -101,6 +103,7 @@
       lsp = {
         enable = true;
         lspSignature.enable = true;
+        formatOnSave = true;
       };
 
       git = {
@@ -110,6 +113,7 @@
 
       theme = {
         enable = true;
+        transparent = true;
         name = "catppuccin";
         style = "mocha";
       };
@@ -144,9 +148,12 @@
         enableFormat = true;
         enableLSP = true;
         enableTreesitter = true;
-        
+
         bash.enable = true;
-        nix.enable = true;
+        nix = {
+          enable = true;
+          format.enable = true;
+        };
         markdown.enable = true;
         ts.enable = true;
       };
@@ -158,8 +165,6 @@
       presence.neocord = {
         enable = true;
         setupOpts = {
-          enable_line_number = true;
-          line_number_text = "Working on line %s of %s";
           logo_tooltip = "Why i'm doing this?";
         };
       };
@@ -182,7 +187,7 @@
         dpi-aware = "no";
         #initial-window-size-chars = "";
         initial-window-mode = "windowed";
-        pad = "25x25";
+        pad = "20x20";
         resize-delay-ms = 100;
         bold-text-in-bright = "no";
         word-delimiters = ",│`|:\"'()[]{}<>";
@@ -205,7 +210,7 @@
       };
 
       colors = {
-        alpha = 0.8;
+        alpha = 0.95;
       };
 
       key-bindings = {
@@ -221,7 +226,7 @@
         find-prev = "Shift+F3";
         find-next = "F3 Control+G";
       };
-    };   
+    };
   };
 
   home.stateVersion = "24.05";

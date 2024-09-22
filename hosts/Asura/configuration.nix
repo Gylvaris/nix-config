@@ -1,16 +1,19 @@
-{inputs, pkgs, ... }:
-
 {
-  imports =
-    [ 
-      ./hardware-configuration.nix
-      ./../../aagl.nix
-    ];
+  inputs,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./hardware-configuration.nix
+    ./../../aagl.nix
+  ];
 
-  swapDevices = [{
-    device = "/swapfile";
-    size = 16 * 1024; # 16GB
-  }];
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 16 * 1024; # 16GB
+    }
+  ];
 
   services.fstrim.enable = true;
   services.xserver.enable = true;
@@ -26,7 +29,7 @@
 
   users.users.gylvaris = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel" "gamemode"]; 
+    extraGroups = ["networkmanager" "wheel" "gamemode"];
   };
 
   programs.zsh.enable = true;
@@ -52,7 +55,7 @@
   ];
 
   environment.variables.EDITOR = "nvim";
-  
+
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 
   programs.steam = {
@@ -61,7 +64,7 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-  
+
   programs.gamemode.enable = true;
 
   programs.mtr.enable = true;
