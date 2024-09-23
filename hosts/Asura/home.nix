@@ -302,6 +302,10 @@ $character
         beam-thickness = 1.3;
       };
 
+      colors = {
+        alpha = 0.95;
+      };
+
       key-bindings = {
         scrollback-up-page = "Page_Up";
         scrollback-down-page = "Page_Down";
