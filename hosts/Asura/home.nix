@@ -83,7 +83,7 @@
         lib.concatStrings [
           ""
           "
-$cmd_duration$directory $nix_shell $git_branch
+$cmd_duration$directory $git_branch $nodejs$nix_shell
 $character
 "
           ""
@@ -181,6 +181,9 @@ $character
       };
 
       nix_shell.symbol = " ";
+      nodejs = {
+        symbol = " ";
+      };
       package.symbol = "󰏗 ";
     };
   };
@@ -230,6 +233,7 @@ $character
         enable = true;
         fidget-nvim.enable = true;
         smoothScroll.enable = true;
+        nvimWebDevicons.enable = true;
       };
 
       utility = {
