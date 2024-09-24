@@ -1,5 +1,5 @@
 {
-  config, 
+  config,
   inputs,
   lib,
   pkgs,
@@ -79,12 +79,15 @@
     enableZshIntegration = true;
     settings = {
       add_newline = false;
-      format = lib.concatStrings [
-        """
-$cmd_duration$directory $git_branch
+      format =
+        lib.concatStrings [
+          ""
+          "
+$cmd_duration$directory $nix_shell $git_branch
 $character
-"""
-      ];
+"
+          ""
+        ];
 
       character = {
         success_symbol = "[• ](bold fg:green) ";
@@ -208,7 +211,7 @@ $character
       lsp = {
         enable = true;
         lspSignature.enable = true;
-        formatOnSave = false;
+        formatOnSave = true;
       };
 
       git = {
@@ -260,7 +263,10 @@ $character
           format.enable = true;
         };
         markdown.enable = true;
-        ts.enable = true;
+        ts = {
+          enable = true;
+          lsp.enable = true;
+        };
       };
 
       telescope = {
