@@ -13,7 +13,7 @@
     };
 
     #Hyprland
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    hyprland.url = "github:hyprwm/Hyprland";
 
     # Launchers for various anime games like Zenless Zone Zero
     aagl = {
