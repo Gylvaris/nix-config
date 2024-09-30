@@ -293,7 +293,7 @@ $character
         shell = "zsh";
         term = "xterm-256color";
         title = "foot";
-        font = "SpaceMono Nerd Font:size=11";
+        font = "SpaceMono Nerd Font:size=10";
         line-height = 13;
         letter-spacing = 0;
         dpi-aware = "no";
