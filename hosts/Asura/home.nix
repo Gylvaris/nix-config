@@ -28,7 +28,6 @@
     tree
     gnused
     gnutar
-    gawk
     zstd
     gnupg
     btop
