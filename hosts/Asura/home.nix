@@ -71,7 +71,7 @@
   };
 
   xdg.configFile."git/allowed_signers".text = ''
-    ${config.programs.git.userEmail} namespaces="git" "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG15d9WSIX2Xcd9pRfSCg43UHoyEGJeCaHxwWGK/QcKA"
+    ${config.programs.git.userEmail} namespaces="git" ""ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGTrQ4GAyRrgoSEa19NPoHTw92mhLEbLMZMH+sTGbVt6
   '';
 
   programs.starship = {
