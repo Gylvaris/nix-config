@@ -206,6 +206,10 @@ $character
         alwaysComplete = true;
       };
 
+      autopairs = {
+        enable = true;
+      };
+
       filetree.neo-tree = {
         enable = true;
       };
@@ -269,6 +273,7 @@ $character
         ts = {
           enable = true;
           lsp.enable = true;
+          extensions.ts-error-translator.enable = true;
         };
       };
 

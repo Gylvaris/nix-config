@@ -52,6 +52,7 @@
     libnotify
     wl-clipboard
     starship
+    inputs.hyprsysteminfo.packages.${pkgs.system}.default
   ];
 
   environment.variables.EDITOR = "nvim";
