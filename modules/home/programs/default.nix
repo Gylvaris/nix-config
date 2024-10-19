@@ -1,5 +1,5 @@
 {
-  impotrs = [
+  imports = [
     ./terminal
     ./gui
   ];

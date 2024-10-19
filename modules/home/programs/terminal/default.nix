@@ -3,5 +3,6 @@
     ./editor
     ./emulator
     ./tools
+    ./shell
   ];
 }
