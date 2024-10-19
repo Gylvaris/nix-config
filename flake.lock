@@ -224,11 +224,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1729195555,
-        "narHash": "sha256-PaGZcRjXXVodyG5syHT8Wate6ERLB3HqFAwIUe+3A+M=",
+        "lastModified": 1729353802,
+        "narHash": "sha256-Ee8dNtxyZ/CiiSQOCopcqehAQprYJPsmrtOkbXm1suQ=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "0e630e9e74ad34683194a07cfe6afe55a2c0685f",
+        "rev": "ce3ba798df6bca5be1da4396644a9ef08a2acab4",
         "type": "github"
       },
       "original": {
@@ -2395,11 +2395,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1729246164,
-        "narHash": "sha256-zk2WGf0tWQj+i4WnqYH1ZroWXCe1YeBfGRKAHnw7Ndw=",
+        "lastModified": 1729366385,
+        "narHash": "sha256-vAvS2wfThYGIlqgpPmkAVOPl2+UIiogCbrCufSQZ+PU=",
         "owner": "PrismLauncher",
         "repo": "PrismLauncher",
-        "rev": "f60d6e4d4868d9e3ac48ea1d31c676deb83af0bb",
+        "rev": "417bb3564d11247dbf02e0d31bee1729670f4977",
         "type": "github"
       },
       "original": {
@@ -2590,11 +2590,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729025076,
-        "narHash": "sha256-HmerIqJ6ed4NkoGCam6VSY8VcsG6BqjVnmUsDdcuyiQ=",
+        "lastModified": 1729334402,
+        "narHash": "sha256-elpcQZC6VoZC4jKk09upN2cGPW4j+OjDpD2HjvYe9Z4=",
         "owner": "ch4og",
         "repo": "zen-browser-flake",
-        "rev": "61c1de37a273449e848d0ccea49747f2d12e9e47",
+        "rev": "d5adb0791f5cf974b2b480f5d62075e9b3e7dd80",
         "type": "github"
       },
       "original": {
