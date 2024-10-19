@@ -1,0 +1,6 @@
+{
+  impotrs = [
+    ./terminal
+    ./gui
+  ];
+}
