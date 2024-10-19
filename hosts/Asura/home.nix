@@ -336,6 +336,16 @@ $character
     };
   };
 
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      wakatime.vscode-wakatime
+      github.copilot
+      jnoortheen.nix-ide
+      yoavbls.pretty-ts-errors
+    ];
+  };
+
   home.stateVersion = "24.05";
 
   programs.home-manager.enable = true;
