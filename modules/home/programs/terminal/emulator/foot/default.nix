@@ -25,9 +25,9 @@
         beam-thickness = 1.5;
       };
 
-      #colors = {
-      #  alpha = 0.95;
-      #};
+      colors = {
+        alpha = 0.85;
+      };
 
       key-bindings = {
         scrollback-up-page = "Page_Up";
