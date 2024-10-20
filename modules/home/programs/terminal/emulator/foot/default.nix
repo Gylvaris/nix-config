@@ -6,13 +6,13 @@
         shell = "zsh";
         term = "xterm-256color";
         title = "foot";
-        font = "SpaceMono Nerd Font:size=10";
-        line-height = 13;
-        letter-spacing = 0;
+        font = "SpaceMono Nerd Font:size=11";
+        #line-height = 13;
+        #letter-spacing = 0;
         dpi-aware = "no";
         pad = "25x25";
-        resize-delay-ms = 100;
-        bold-text-in-bright = "no";
+        #resize-delay-ms = 100;
+        #bold-text-in-bright = "no";
       };
 
       scrollback = {
@@ -22,12 +22,12 @@
       cursor = {
         style = "beam";
         blink = "no";
-        beam-thickness = 1.3;
+        beam-thickness = 1.5;
       };
 
-      colors = {
-        alpha = 0.95;
-      };
+      #colors = {
+      #  alpha = 0.95;
+      #};
 
       key-bindings = {
         scrollback-up-page = "Page_Up";

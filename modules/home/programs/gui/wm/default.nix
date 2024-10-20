@@ -1,6 +1,5 @@
 {
   imports = [
-    ./vscode
-    ./wm
+    ./hyprland
   ];
 }
