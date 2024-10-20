@@ -52,6 +52,7 @@
     slurp
     swww
     wf-recorder
+    cliphist
   ];
 
   home.stateVersion = "24.05";
