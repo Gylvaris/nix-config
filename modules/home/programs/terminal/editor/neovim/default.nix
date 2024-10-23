@@ -78,6 +78,7 @@
         ts = {
           enable = true;
           lsp.enable = true;
+          format.type = "prettierd";
           extensions.ts-error-translator.enable = true;
         };
       };
